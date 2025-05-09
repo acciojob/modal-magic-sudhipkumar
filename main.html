@@ -8,22 +8,20 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<!-- Trigger Button -->
-  <button class="open-btn" onclick="openModal()">Open Modal</button>
+	 <button id="openModal">Open Modal</button>
 
-  <!-- Modal Overlay -->
-  <div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
-    <!-- Modal Box -->
+  <div id="modalOverlay" onclick="handleOverlayClick(event)">
     <div class="modal" onclick="event.stopPropagation()">
       <div class="modal-header">
-        <span class="modal-title">Modal Title</span>
+        <span>Modal Title</span>
         <button class="close-btn" onclick="closeModal()">&times;</button>
       </div>
       <div class="modal-body">
-        <p>This is the modal content. You can put any HTML or text here.</p>
+        <p>This is the modal body content.</p>
       </div>
     </div>
   </div>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
